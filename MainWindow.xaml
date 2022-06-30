@@ -1,0 +1,194 @@
+﻿<Window
+    x:Class="NET_ININ3_PR2_z1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:NET_ININ3_PR2_z1"
+    mc:Ignorable="d"
+    
+    Title="Nasze okno"
+    Height="650"
+    Width="400"
+    FontSize="24"
+    >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.ColumnSpan="5"
+            Style="{DynamicResource Bufory}"
+            Text="{Binding Bufory}"
+            />
+        <TextBlock
+            Grid.ColumnSpan="5"
+            Grid.Row="1"
+            Style="{DynamicResource IO}"
+            Text="{Binding IO}"
+            />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="0" Click="DziałanieProcentowe"
+            >%</Button>
+        <Button
+            Style="{StaticResource Ważny}"
+            Grid.Row="2"
+            Grid.Column="1" Click="Zeruj"
+            >CE</Button>
+        <Button
+            Style="{StaticResource Ważny}"
+            Grid.Row="2"
+            Grid.Column="2" Click="Resetuj"
+            >C</Button>
+        <Button
+            Style="{StaticResource Ważny}"
+            Grid.Row="2"
+            Grid.Column="3" Click="Cofnij"
+            >🠔</Button>
+        
+        <Button
+            Grid.Row="3"
+            Grid.Column="0" Click="DziałanieJednoargumentowe"
+            >1/x</Button>
+        <Button
+            Grid.Row="3"
+            Grid.Column="1" Click="DziałanieJednoargumentowe"
+            >x²</Button>
+        <Button
+            Grid.Row="3"
+            Grid.Column="2" Click="DziałanieJednoargumentowe"
+            >√</Button>
+        <Button
+            Grid.Row="3"
+            Grid.Column="3" Click="DziałanieZwykłe"
+            >/</Button>
+        
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="4"
+            Grid.Column="0"
+            Click="Cyfra"
+            >7</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="4"
+            Grid.Column="1"
+            Click="Cyfra"
+            >8</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="4"
+            Grid.Column="2"
+            Click="Cyfra"
+            >9</Button>
+        <Button
+            Grid.Row="4"
+            Grid.Column="3" Click="DziałanieZwykłe"
+            >*</Button>
+
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="5"
+            Grid.Column="0"
+            Click="Cyfra"
+            >4</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="5"
+            Grid.Column="1"
+            Click="Cyfra"
+            >5</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="5"
+            Grid.Column="2"
+            Click="Cyfra"
+            >6</Button>
+        <Button
+            Grid.Row="5"
+            Grid.Column="3" Click="DziałanieZwykłe"
+            >-</Button>
+
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="6"
+            Grid.Column="0"
+            Click="Cyfra"
+            >1</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="6"
+            Grid.Column="1"
+            Click="Cyfra"
+            >2</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="6"
+            Grid.Column="2"
+            Click="Cyfra"
+            >3</Button>
+        <Button
+            Grid.Row="6"
+            Grid.Column="3" Click="DziałanieZwykłe"
+            >+</Button>
+
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="7"
+            Grid.Column="0" Click="ZmianaZnaku"
+            >+/-</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="7"
+            Grid.Column="1"
+            Click="Cyfra"
+            >0</Button>
+        <Button
+            Style="{StaticResource Cyfra}"
+            Grid.Row="7"
+            Grid.Column="2" Click="Przecinek"
+            >,</Button>
+        <Button
+            Style="{StaticResource Ważny}"
+            Grid.Row="7"
+            Grid.Column="3" Click="PodajWynik"
+            >=</Button>
+        <Button
+            Grid.Row="2"
+            Grid.Column="5" Click="DziałanieJednoargumentowe"
+            >!</Button>
+        <Button
+            Grid.Row="3"
+            Grid.Column="5" Click="DziałanieZwykłe"
+            >mod</Button>
+        <Button
+            Grid.Row="4"
+            Grid.Column="5" Click="DziałanieJednoargumentowe"
+            >ln</Button>
+        <Button
+            Grid.Row="5"
+            Grid.Column="5" Click="DziałanieJednoargumentowe"
+            >Floor</Button>
+        <Button
+            Grid.Row="6"
+            Grid.Column="5" Click="DziałanieJednoargumentowe"
+            >Ceiling</Button>
+    </Grid>
+</Window>
